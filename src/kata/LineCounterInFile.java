@@ -5,6 +5,7 @@ import java.io.*;
 import static org.apache.commons.lang3.StringUtils.isNotBlank;
 
 public class LineCounterInFile {
+
     private enum State {INSIDE_COMMENT, OUTSIDE_COMMENT}
 
     public static int countLinesInFile(File file) throws IOException {
