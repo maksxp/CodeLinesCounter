@@ -6,7 +6,10 @@ import java.io.InputStreamReader;
 
 public class Source {
 
-    private String pathToSource;
+   private String pathToSource;
+   public Source (){
+       System.out.println("Input file or folder name and press Enter");
+   }
 
    public String getPathToSource() throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
